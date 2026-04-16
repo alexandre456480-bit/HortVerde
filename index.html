@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HortVerde - O Melhor da Horta. Fornecedora de tomates premium para Goiania, Aparecida de Goiania e Senador Canedo. Direto do CEASA com entrega rapida.">
+    <meta name="keywords"
+        content="tomates, fornecedor tomates goiania, tomate longa vida, tomate italiano, tomate cereja, tomate saladete, CEASA Goiania, distribuidor tomates">
+    <meta name="author" content="HortVerde">
+    <meta property="og:title" content="HortVerde - Fornecedora de Tomates Premium em Goiania">
+    <meta property="og:description"
+        content="Especialistas em tomates de alta qualidade. Entrega rapida para toda Goiania e regiao.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hortverde.com.br/">
+    <meta property="og:image" content="https://hortverde.com.br/Capturar.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://hortverde.com.br/">
+    <title>HortVerde - O Melhor da Horta | Fornecedora de Tomates Premium</title>
+
+    <!-- Schema Markup JSON-LD para SEO Local e Google E-E-A-T -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WholesaleStore",
+      "name": "HortVerde",
+      "image": "https://hortverde.com.br/logo_hortverde.png",
+      "description": "A maior fornecedora de tomates premium em Goiânia. Atendimento do CEASA para restaurantes, lanchonetes e supermercados.",
+      "url": "https://hortverde.com.br",
+      "telephone": "+5562996082008",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "CEASA GP 5 - Box 1/2",
+        "addressLocality": "Goiânia",
+        "addressRegion": "GO",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -16.6273745,
+        "longitude": -49.203912
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="remove.bg/1.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="logo_hortverde.png" alt="HortVerde Logo">
+        </a>
+        <ul class="navbar-links" id="navLinks">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#especialista">Sobre</a></li>
+            <li><a href="#entrega">Entrega</a></li>
+            <li><a href="#tomates">Produtos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato" class="navbar-cta">Contato</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ══════════════ HERO SECTION ══════════════ -->
+    <div class="hero-wrapper" id="heroWrapper">
+        <section class="hero" id="hero">
+            <!-- Floating Particles -->
+            <div class="floating-particles" id="heroParticles"></div>
+
+            <div class="hero-content">
+                <!-- Texto do Hero -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i data-lucide="leaf"></i>
+                        Direto do CEASA de Goiania
+                    </div>
+                    <h1 class="hero-title">
+                        <span>HortVerde</span>
+                        <span class="accent">O Melhor da Horta</span>
+                    </h1>
+                    <p class="hero-description">
+                        Somos especialistas no fornecimento de tomates de alta qualidade para toda a regiao de Goiania.
+                        Anos de experiencia, frescor garantido e entregas que acompanham o ritmo do seu negocio.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5562996082008?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+                            class="btn-primary" target="_blank">
+                            Fazer Pedido
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#tomates" class="btn-secondary">
+                            <i data-lucide="eye"></i>
+                            Ver Produtos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagens fluidas -->
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-frame" id="heroImageFrame">
+                        <img src="remove.bg/1.png" alt="Tomate HortVerde 1" class="active" data-index="0">
+                        <img src="remove.bg/2.png" alt="Tomate HortVerde 2" data-index="1">
+                        <img src="remove.bg/3.png" alt="Tomate HortVerde 3" data-index="2">
+                        <img src="remove.bg/4.png" alt="Tomate HortVerde 4" data-index="3">
+                        <img src="remove.bg/5.png" alt="Tomate HortVerde 5" data-index="4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="hero-scroll-indicator" id="heroScrollIndicator">
+                <span>Role para explorar</span>
+                <div class="scroll-line"></div>
+            </div>
+
+            <!-- Wave Divider -->
+            <div class="hero-wave-divider">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0,80 C180,120 360,20 540,60 C720,100 900,30 1080,70 C1200,95 1320,50 1440,80 L1440,120 L0,120 Z"
+                        fill="#FAFAF5" />
+                    <path
+                        d="M0,90 C200,110 400,40 600,70 C800,100 1000,50 1200,80 C1320,96 1380,70 1440,90 L1440,120 L0,120 Z"
+                        fill="#FAFAF5" opacity="0.5" />
+                </svg>
+            </div>
+        </section>
+    </div>
+
+    <!-- ══════════════ SECTION 1 - ESPECIALISTA EM TOMATE ══════════════ -->
+    <section id="especialista">
+        <img src="assets/detalhes/caixa.webp" alt="" class="floating-detail fd-1">
+        <div class="diagonal-accent"></div>
+        <div class="section-container">
+            <div class="especialista-grid">
+                <!-- Visual -->
+                <div class="especialista-visual reveal-left">
+                    <div class="especialista-accent-circle"></div>
+                    <div class="especialista-image-main">
+                        <img src="Capturar.PNG" alt="HortVerde CEASA Goiania" loading="lazy" decoding="async">
+                    </div>
+                    <div class="especialista-image-secondary img-1">
+                        <img src="Capturar1.PNG" alt="Qualidade HortVerde" loading="lazy" decoding="async">
+                    </div>
+                    <div class="especialista-image-secondary img-2">
+                        <img src="Capturar3.PNG" alt="Tomates HortVerde" loading="lazy" decoding="async">
+                    </div>
+                    <div class="especialista-badge-float">
+                        <div class="badge-number">10+</div>
+                        <div class="badge-text">Anos de Experiencia</div>
+                    </div>
+                </div>
+
+                <!-- Conteudo -->
+                <div class="especialista-content reveal-right">
+                    <div class="section-label">
+                        <i data-lucide="award"></i>
+                        Referencia em qualidade
+                    </div>
+                    <h2>Especialistas em <span class="highlight">Tomate</span> de Alta Qualidade</h2>
+                    <p>
+                        A HortVerde se consolidou como uma das principais fornecedoras de tomates da regiao de Goiania.
+                        Atuando diretamente no CEASA, garantimos produtos frescos, selecionados criteriosamente e com o
+                        melhor custo-beneficio do mercado.
+                    </p>
+                    <div class="especialista-features stagger-children">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Qualidade Garantida</h4>
+                                <p>Selecao rigorosa de cada tomate antes do envio ao cliente.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="warehouse"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Direto do CEASA</h4>
+                                <p>Produtos frescos do maior centro de abastecimento de Goias.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Atendimento Especializado</h4>
+                                <p>Equipe treinada para atender as necessidades de cada cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ══════════════ SECTION 2 - ENTREGA RAPIDA ══════════════ -->
+    <section id="entrega">
+        <img src="assets/detalhes/folha.webp" alt="" class="floating-detail fd-2">
+        <!-- Shape Divider Top -->
+        <div class="shape-divider shape-divider-top">
+            <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C240,20 480,50 720,30 C960,10 1200,40 1440,60 L1440,0 L0,0 Z" fill="#FAFAF5" />
+            </svg>
+        </div>
+
+        <div class="floating-particles" id="entregaParticles"></div>
+
+        <div class="section-container">
+            <div class="entrega-layout">
+                <!-- Texto -->
+                <div class="entrega-text reveal-left">
+                    <div class="section-label" style="background: rgba(241,236,219,0.1); color: var(--candle);">
+                        <i data-lucide="truck"></i>
+                        Logistica eficiente
+                    </div>
+                    <h2>Entrega <span class="highlight">Rapida</span> para Goiania e Regiao</h2>
+                    <p>
+                        Nossa frota propria realiza entregas diarias com agilidade e seguranca, atendendo restaurantes,
+                        supermercados, lanchonetes e comercios em geral. Entregamos em grande escala sem perder a
+                        qualidade.
+                    </p>
+                    <div class="entrega-stats stagger-children">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <h3>100+</h3>
+                            <p>Entregas por semana</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <h3>3</h3>
+                            <p>Cidades atendidas</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h3>9h</h3>
+                            <p>Janela de entrega</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="star"></i>
+                            </div>
+                            <h3>5.0</h3>
+                            <p>Avaliacao no Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa de entregas -->
+                <div class="entrega-visual reveal-right">
+                    <div class="entrega-map-card">
+                        <h3>
+                            <i data-lucide="navigation"></i>
+                            Areas de Entrega
+                        </h3>
+                        <div class="delivery-locations">
+                            <div class="location-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Goiania - Todas as regioes</span>
+                            </div>
+                            <div class="location-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Aparecida de Goiania</span>
+                            </div>
+                            <div class="location-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Senador Canedo</span>
+                            </div>
+                        </div>
+                        <div class="entrega-schedule">
+                            <i data-lucide="calendar-days"></i>
+                            <div class="schedule-info">
+                                <strong>Segunda a Sexta</strong>
+                                <span>9:00 as 18:00 - Entregas diarias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shape Divider Bottom -->
+        <div class="shape-divider shape-divider-bottom">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,40 Q180,80 360,40 T720,40 T1080,40 T1440,40 L1440,80 L0,80 Z" fill="#F1ECDB" />
+                <path d="M0,55 Q240,75 480,50 T960,55 T1440,50 L1440,80 L0,80 Z" fill="#F1ECDB" opacity="0.6" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ══════════════ SECTION 3 - TIPOS DE TOMATE ══════════════ -->
+    <section id="tomates">
+        <img src="assets/detalhes/tomateverde.webp" alt="" class="floating-detail fd-3">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <i data-lucide="cherry"></i>
+                    Nossos Produtos
+                </div>
+                <h2 class="section-title">Variedades de <span class="highlight">Tomate</span></h2>
+                <p class="section-subtitle">
+                    Trabalhamos com as principais variedades do mercado, atendendo a todas as necessidades culinarias e
+                    comerciais. Cada tipo com suas caracteristicas unicas.
+                </p>
+            </div>
+
+            <div class="tomates-grid stagger-children">
+                <!-- Tomate Longa Vida -->
+                <div class="tomate-card">
+                    <div class="tomate-card-image">
+                        <div class="tomate-card-badge">Popular</div>
+                        <img src="assets/tomates/longa_vida.png" alt="Tomate Longa Vida">
+                    </div>
+                    <div class="tomate-card-content">
+                        <h3>Longa Vida</h3>
+                        <p>O mais vendido no Brasil. Possui casca firme, durabilidade superior e otimo custo-beneficio.
+                            Ideal para o dia a dia.</p>
+                        <div class="tomate-card-uses">
+                            <span><i data-lucide="chef-hat"></i> Saladas</span>
+                            <span><i data-lucide="flame"></i> Molhos</span>
+                            <span><i data-lucide="sandwich"></i> Sanduiches</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomate Italiano -->
+                <div class="tomate-card">
+                    <div class="tomate-card-image">
+                        <div class="tomate-card-badge">Gourmet</div>
+                        <img src="assets/tomates/italiano.png" alt="Tomate Italiano">
+                    </div>
+                    <div class="tomate-card-content">
+                        <h3>Italiano</h3>
+                        <p>Formato alongado, polpa densa e poucas sementes. Perfeito para molhos encorpados e pratos da
+                            culinaria mediterranea.</p>
+                        <div class="tomate-card-uses">
+                            <span><i data-lucide="flame"></i> Molhos</span>
+                            <span><i data-lucide="beef"></i> Assados</span>
+                            <span><i data-lucide="pizza"></i> Pizzas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomate Cereja -->
+                <div class="tomate-card">
+                    <div class="tomate-card-image">
+                        <div class="tomate-card-badge">Premium</div>
+                        <img src="assets/tomates/cereja.png" alt="Tomate Cereja">
+                    </div>
+                    <div class="tomate-card-content">
+                        <h3>Cereja</h3>
+                        <p>Pequenos, doces e versateis. Excelente para decoracao de pratos, aperitivos e saladas
+                            sofisticadas.</p>
+                        <div class="tomate-card-uses">
+                            <span><i data-lucide="chef-hat"></i> Saladas</span>
+                            <span><i data-lucide="sparkles"></i> Decoracao</span>
+                            <span><i data-lucide="grape"></i> Aperitivos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomate Saladete -->
+                <div class="tomate-card">
+                    <div class="tomate-card-image">
+                        <div class="tomate-card-badge">Versatil</div>
+                        <img src="assets/tomates/saladete.png" alt="Tomate Saladete">
+                    </div>
+                    <div class="tomate-card-content">
+                        <h3>Saladete</h3>
+                        <p>Tambem conhecido como Santa Cruz. Equilibrio perfeito entre sabor e textura. O coringa da
+                            cozinha profissional.</p>
+                        <div class="tomate-card-uses">
+                            <span><i data-lucide="chef-hat"></i> Saladas</span>
+                            <span><i data-lucide="flame"></i> Refogados</span>
+                            <span><i data-lucide="soup"></i> Sopas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shape Divider -->
+        <div class="shape-divider shape-divider-bottom">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,60 C120,80 240,20 360,50 C480,80 600,30 720,55 C840,80 960,25 1080,50 C1200,75 1320,35 1440,60 L1440,100 L0,100 Z"
+                    fill="#FAFAF5" />
+                <path
+                    d="M0,75 C200,90 400,45 600,70 C800,95 1000,40 1200,65 C1350,80 1400,60 1440,75 L1440,100 L0,100 Z"
+                    fill="#FAFAF5" opacity="0.5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ══════════════ SECTION 4 - CLIENTES & DEPOIMENTOS ══════════════ -->
+    <section id="clientes">
+        <img src="assets/detalhes/tomate.webp" alt="" class="floating-detail fd-4">
+        <img src="assets/detalhes/tomate2.webp" alt="" class="floating-detail fd-5">
+        <div class="section-container">
+            <!-- Intro -->
+            <div class="clientes-intro">
+                <div class="clientes-intro-text reveal-left">
+                    <div class="section-label">
+                        <i data-lucide="handshake"></i>
+                        Parcerias de confianca
+                    </div>
+                    <h2>Para Quem <span class="highlight">Fornecemos</span></h2>
+                    <p>
+                        Atendemos os mais diversos segmentos do setor alimenticio na regiao de Goiania. Nosso
+                        compromisso e garantir que cada cliente receba tomates frescos, no prazo e com qualidade
+                        excepcional.
+                    </p>
+                </div>
+                <div class="clientes-types stagger-children reveal-right">
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="utensils"></i>
+                        </div>
+                        <span>Restaurantes</span>
+                    </div>
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="shopping-cart"></i>
+                        </div>
+                        <span>Supermercados</span>
+                    </div>
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="pizza"></i>
+                        </div>
+                        <span>Pizzarias</span>
+                    </div>
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="sandwich"></i>
+                        </div>
+                        <span>Lanchonetes</span>
+                    </div>
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="salad"></i>
+                        </div>
+                        <span>Hortifruti</span>
+                    </div>
+                    <div class="cliente-type">
+                        <div class="cliente-type-icon">
+                            <i data-lucide="hotel"></i>
+                        </div>
+                        <span>Hoteis e Buffets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Depoimentos -->
+            <div class="depoimentos-header reveal">
+                <h3>O Que Nossos <span style="color: var(--bow);">Clientes</span> Dizem</h3>
+                <p>Avaliacoes reais do Google Maps</p>
+            </div>
+
+            <div class="depoimentos-slider stagger-children">
+                <div class="depoimentos-track">
+                    <!-- Grupo 1 -->
+                    <div class="depoimentos-group">
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Fui na loja de tomates achando que ia sair com a salada dos sonhos. Mas não, saí com um dilema existencial. Os tomates são tão perfeitos que agora fico pensando se são reais ou algum tipo de simulação. A cor? Impecável. O sabor? Quase chorei. O problema? Como vou voltar a comer os tomates normais do mercado depois disso? Eles me estragaram para sempre. Obrigado por arruinar minha relação com tomates medianos"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">G</div>
+                                <div class="depoimento-info">
+                                    <strong>Gustavo Novato</strong>
+
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Melhor atendimento ao cliente e capacidade de lidar com demandas de alto nivel."
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">I</div>
+                                <div class="depoimento-info">
+                                    <strong>Ian Miyagi</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Ótimo atendimento e produtos de qualidade com preço justo"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">V</div>
+                                <div class="depoimento-info">
+                                    <strong>Vinicius Pereira</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+                    </div>
+
+                    <!-- Grupo 2 (Novos Testemunhos) -->
+                    <div class="depoimentos-group">
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Extremamente educado e atendimento bastante rápido. Recomendo!"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar" style="background: #e3a95d;">R</div>
+                                <div class="depoimento-info">
+                                    <strong>Renan Bulhões</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Mercadoria de muita qualidade e o atendimento muito bom!"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar" style="background: #6a9c78;">H</div>
+                                <div class="depoimento-info">
+                                    <strong>Henrique Barbo</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Atendimento excelente! Só produto de qualidade"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar" style="background: #9b6a9c;">L</div>
+                                <div class="depoimento-info">
+                                    <strong>Lara Pedriel Barreto</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+                    </div>
+
+                    <!-- Grupo 1 Clone (Para o Loop Suave) -->
+                    <div class="depoimentos-group" aria-hidden="true">
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Tomates de excelente qualidade! Sempre frescos e com preco justo. A entrega e muito rapida e o atendimento e impecavel."
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">M</div>
+                                <div class="depoimento-info">
+                                    <strong>Marcos Silva</strong>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Compro da HortVerde ha anos e nunca me decepcionei. Os tomates sao selecionados, firmes e saborosos. A melhor opcao!"
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">A</div>
+                                <div class="depoimento-info">
+                                    <strong>Ana Paula Ribeiro</strong>
+                                    <span>Gerente de Supermercado</span>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+                        <div class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Profissionalismo e qualidade. Entrega no horario, produto impecavel. Minha pizzaria so trabalha com os tomates deles."
+                            </p>
+                            <div class="depoimento-author">
+                                <div class="depoimento-avatar">R</div>
+                                <div class="depoimento-info">
+                                    <strong>Roberto Mendes</strong>
+                                    <span>Dono de Pizzaria</span>
+                                </div>
+                            </div>
+                            <div class="depoimento-google"><i data-lucide="check-circle"></i> Avaliacao do Google</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shape Divider -->
+        <div class="shape-divider shape-divider-bottom">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0,20 L48,25 C96,30 192,40 288,45 C384,50 480,50 576,42 C672,34 768,18 864,15 C960,12 1056,22 1152,32 C1248,42 1344,52 1392,57 L1440,62 L1440,80 L0,80 Z"
+                    fill="#292F17" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ══════════════ SECTION 5 - CONTATO ══════════════ -->
+    <section id="contato">
+        
+        <div class="section-container">
+            <div class="contato-layout">
+                <!-- Info de Contato -->
+                <div class="contato-info reveal-left">
+                    <div class="section-label" style="background: rgba(241,236,219,0.1); color: var(--candle);">
+                        <i data-lucide="phone"></i>
+                        Fale Conosco
+                    </div>
+                    <h2>Entre em <span class="highlight">Contato</span></h2>
+                    <p>
+                        Estamos prontos para atender seu pedido. Entre em contato pelo WhatsApp, visite nosso Instagram
+                        ou venha nos conhecer pessoalmente no CEASA de Goiania.
+                    </p>
+
+                    <div class="contato-methods">
+                        <a href="https://wa.me/5562996082008?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos."
+                            class="contato-method" target="_blank">
+                            <div class="contato-method-icon whatsapp-icon">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <div class="contato-method-text">
+                                <strong>WhatsApp</strong>
+                                <span>(62) 99608-2008</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/hortverdego" class="contato-method" target="_blank">
+                            <div class="contato-method-icon instagram-icon">
+                                <i data-lucide="instagram"></i>
+                            </div>
+                            <div class="contato-method-text">
+                                <strong>Instagram</strong>
+                                <span>@hortverdego</span>
+                            </div>
+                        </a>
+
+                        <a href="https://maps.google.com/?q=-16.6273745,-49.203912" class="contato-method"
+                            target="_blank">
+                            <div class="contato-method-icon location-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contato-method-text">
+                                <strong>CEASA - Goiania</strong>
+                                <span>GP 5 - Box 1/2</span>
+                            </div>
+                        </a>
+
+                        <div class="contato-method">
+                            <div class="contato-method-icon clock-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="contato-method-text">
+                                <strong>Horario de Funcionamento</strong>
+                                <span>Seg a Sex - 9:00 as 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="contato-map-wrapper reveal-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.5!2d-49.203912!3d-16.6273745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef373281471e5%3A0x5508b47563b687ef!2sHortVerde%20-%20Comercial!5e0!3m2!1spt-BR!2sbr!4v1713300000000!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização HortVerde no CEASA">
+                    </iframe>
+                    <div class="contato-map-overlay">
+                        <span>HortVerde - CEASA Goiania</span>
+                        <a href="https://maps.google.com/?q=-16.6273745,-49.203912" target="_blank">
+                            Abrir no Maps
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo_hortverde.png" alt="HortVerde">
+            </div>
+            <p class="footer-text">O Melhor da Horta - Fornecedora de Tomates Premium</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 HortVerde. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ══════════════ WHATSAPP FLOAT ══════════════ -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-pulse"></div>
+        <a href="https://wa.me/5562996082008?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido."
+            target="_blank" aria-label="Contato WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
